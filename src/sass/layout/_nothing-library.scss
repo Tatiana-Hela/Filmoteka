@@ -1,0 +1,73 @@
+.container-nothing {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+    url(/src/images/empty-hall.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .container-nothing {
+    padding: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-nothing {
+    padding: 100px;
+  }
+}
+
+.container-nothing__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: var(--text-color-white);
+}
+@media screen and (min-width: 768px) {
+  .container-nothing__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-nothing__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.container-nothing__text {
+  border-radius: 5px;
+  text-align: center;
+  color: var(--text-color-white);
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .container-nothing__text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-nothing__text {
+    font-size: 18px;
+  }
+}
+.container-nothing__link {
+  margin-right: 10px;
+  font-weight: 600;
+  color: var(--main-accent-color);
+
+  &:hover,
+  &:focus {
+    color: #da5b06;
+    box-shadow: 0px 8px 43px rgba(255, 107, 1, 0.6);
+  }
+}
